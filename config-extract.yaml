@@ -1,0 +1,71 @@
+button:
+  - platform: template
+    id: dimplex_up
+    name: "Dimplex SV Up"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x194
+  - platform: template
+    id: dimplex_down
+    name: "Dimplex SV Down"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x195
+  - platform: template
+    id: dimplex_auto
+    name: "Dimplex Speed Auto"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x196
+  - platform: template
+    id: dimplex_low
+    name: "Dimplex Speed Low"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x19a
+  - platform: template
+    id: dimplex_medium
+    name: "Dimplex Speed Medium"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x19b
+  - platform: template
+    id: dimplex_high
+    name: "Dimplex Speed High"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x199
+  - platform: template
+    id: dimplex_power
+    name: "Dimplex Power Toggle"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x19c
+  - platform: template
+    id: dimplex_next_fan
+    name: "Dimplex Speed Next"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x198
+  - platform: template
+    id: dimplex_on
+    name: "Dimplex Force On"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x192
+  - platform: template
+    id: dimplex_tog_swing
+    name: "Dimplex Swing Toggle"
+    on_press: 
+      then:
+        - remote_transmitter.transmit_pioneer: 
+            rc_code_1: 0x190
